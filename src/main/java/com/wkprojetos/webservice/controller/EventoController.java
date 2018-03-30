@@ -24,24 +24,24 @@ public class EventoController {
 	@Autowired
 	private EventoRepository er;
 	
-	@GetMapping(produces = "application/json")
+	@GetMapping(path = "/listar", produces = "application/json")
 	public @ResponseBody Iterable<Evento> listarEventos() {
 		Iterable<Evento> listaEventos = er.findAll();
 		return listaEventos;
 	}
 	
-	@PostMapping()
+	@PostMapping(path = "/novo")
 	public Evento salvarEvento(@RequestBody @Valid Evento evento) {
 		return er.save(evento);
 	}
 	
-	@DeleteMapping()
+	@DeleteMapping(path = "/excluir")
 	public Evento excluirEvento(@RequestBody Evento evento) {
 		er.delete(evento);
 		return evento;
 	}
 	
-	@PutMapping()
+	@PutMapping(path = "editar")
 	public Evento editarEvento(@RequestBody Evento evento) {
 		er.save(evento);
 		return evento;
