@@ -35,13 +35,13 @@ public class EventoController {
 		return er.save(evento);
 	}
 	
-	@DeleteMapping(path = "/excluir")
+	@DeleteMapping(path = "/remover")
 	public Evento excluirEvento(@RequestBody Evento evento) {
 		er.delete(evento);
 		return evento;
 	}
 	
-	@PutMapping(path = "editar")
+	@PutMapping(path = "/editar")
 	public Evento editarEvento(@RequestBody Evento evento) {
 		er.save(evento);
 		return evento;
