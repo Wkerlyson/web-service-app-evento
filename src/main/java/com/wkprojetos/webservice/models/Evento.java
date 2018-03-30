@@ -21,6 +21,8 @@ public class Evento {
 	
 	@NotBlank
 	private String horarioEvento;
+	
+	private String nomeEvento;
 
 	public Long getId() {
 		return id;
@@ -52,6 +54,14 @@ public class Evento {
 
 	public void setHorarioEvento(String horarioEvento) {
 		this.horarioEvento = horarioEvento;
+	}
+
+	public String getNomeEvento() {
+		return nomeEvento;
+	}
+
+	public void setNomeEvento(String nomeEvento) {
+		this.nomeEvento = nomeEvento;
 	}
 	
 	
