@@ -2,9 +2,9 @@
 
 Web Service criado para a aula _Consumindo Web Service com Retrofit no Android_
 
-_URL Base:_ https://wkerlyson-appeventos.herokuapp.com
+_Endpoint:_ https://wkerlyson-appeventos.herokuapp.com
 
-##### Endpoints:
+##### URIs:
 
 _/evento/listar_ (Lista todos os eventos cadastrados)
 
